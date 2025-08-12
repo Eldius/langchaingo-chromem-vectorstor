@@ -1,0 +1,7 @@
+
+*.log
+.vscode/
+.idea/
+*.db
+# Added by goreleaser init:
+dist/
