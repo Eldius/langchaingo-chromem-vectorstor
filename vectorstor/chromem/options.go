@@ -30,7 +30,8 @@ func WithLogger(logger *slog.Logger) Option {
 
 func defaultStorageOptions() storageOptions {
 	return storageOptions{
-		dbPath: ".db",
-		logger: slog.Default(),
+		dbPath:   ".db",
+		logger:   slog.Default(),
+		collName: "documents",
 	}
 }
