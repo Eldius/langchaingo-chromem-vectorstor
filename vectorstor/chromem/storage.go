@@ -167,6 +167,7 @@ func (s *Storage) SimilaritySearch(ctx context.Context, query string, numDocumen
 		for k, v := range queryRes[0].Metadata {
 			md[k] = v
 		}
+		md["_id"] = res.ID
 		docs = append(docs, schema.Document{
 			PageContent: res.Content,
 			Metadata:    md,
